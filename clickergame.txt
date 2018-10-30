@@ -1,0 +1,88 @@
+<html>
+  <head>
+  <title> JS Clicker</title>
+  </head>
+  
+  <body>
+    
+    <style>
+      img{
+        margin-left: 275px;
+      }
+    </style>
+    
+    
+    <button type="button" onclick="clickcounter()">Click Me</button>
+    <p>Clicks: <a id="Hits">0</a></p>
+    
+    
+    <script type="text/javascript">
+    var clicks = 0;
+    function clickcounter() {
+         clicks = clicks + 1;
+         changeimage()
+        
+        document.getElementById("Hits").innerHTML = clicks;
+    };
+    </script>
+    
+    
+    
+    
+    <img id="img1" src="Golden_mario.png" width="150" style ="display:none">
+    <img id="img2" src="download.jpg" width="150" style ="display:none">
+    <img id="img3" src="golden.jpg"  width="150" style ="display:none">
+    
+    <script type="text/javascript">
+    
+    function changeimage()
+    {
+      if(clicks>5)
+      {
+        document.getElementById("img1").style.display = "block";
+      }
+      if(clicks>10)
+      {
+        document.getElementById("img2").style.display = "block";
+      }
+      if(clicks>15)
+      {
+       document.getElementById("img3").style.display = "block";
+      }
+    }
+    
+    
+    </script>
+    
+    
+    
+    
+     
+    
+  </body>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
