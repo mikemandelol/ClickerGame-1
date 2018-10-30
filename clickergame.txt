@@ -32,7 +32,7 @@
     <img id="img1" src="Golden_mario.png" width="150" style ="display:none">
     <img id="img2" src="download.jpg" width="150" style ="display:none">
     <img id="img3" src="golden.jpg"  width="150" style ="display:none">
-    
+    <img id="img4" src="https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg"  width="150" style ="display:none">
     <script type="text/javascript">
     
     function changeimage()
@@ -40,6 +40,7 @@
       if(clicks>5)
       {
         document.getElementById("img1").style.display = "block";
+        document.getElementById("img4").style.display = "block";
       }
       if(clicks>10)
       {
