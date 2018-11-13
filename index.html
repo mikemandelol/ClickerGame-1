@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Clicker game</title>
+<style>
+#ach1{
+  visibility:hidden;
+}
+#ach2{
+  visibility:hidden;
+}
+#ach3{
+  visibility:hidden;
+}
+  
+</style>  
+</head>
+
+<body  class = "background" >
+
+<h1><center>Clicker Game</center></h1>
+
+<center><button type="button" onClick = "clickme()">CLICK ME</button></center>
+<br>
+<center><a id = "total">Total Clicks: 0</a></center>
+<img id="ach1" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "100">
+<img id="ach2" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "100">
+<img id="ach3" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "100">
+<script>
+  var totalClick = 0;
+  var totaalClick = 1;
+  
+  function clickme(){
+    totalClick+=totaalClick;
+    document.getElementById("total").innerHTML="Total Clicks:"+totalClick;
+    if(totalClick == 5){
+      alert("KEEP CLICKING! HERE IS A PRIZE");document.getElementById("ach1").style.visibility="visible";
+    }
+    if(totalClick == 10){
+      alert("KEEP CLICKING! HERE IS A 2ND PRIZE!!!!!!!!!");document.getElementById("ach2").style.visibility="visible";
+    }
+    if(totalClick == 15){
+      alert("CONGRATS! HERE IS YOUR FINAL PRIZE!!!");document.getElementById("ach3").style.visibility="visible";
+    }
+    
+  }  
+  
+  
+  
+  
+  
+  
+  
+</script>
+
+</body>
+</html>
